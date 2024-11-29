@@ -1,26 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./css/all.min.css">
-    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="/css/all.min.css">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
     <link rel="stylesheet" href="index.css">
+    <title>Bookmarker</title>
 </head>
+
 <body>
- 
-    <div class="perant text-center my-5">
-        <div class="container w-100 ">
-        <h1 class="my-3">Quote of the Day</h1>
-        <p class="my-3 fs-2">Press the button below to recieve a random quote!</p>
-        <button class=" my-3 py-3 px-5" id="changeSentenceButton">New Quote</button>
-        <div id="sentence" class="mt-3 fs-2 w-75 m-auto"></div>
+
+    <div class="perant py-5">
+        <div class="container">
+            <div class="text-center w-auto">          
+                  <h1 class="position-relative mx-auto ">Bookmarker</h1>
+            </div>
+            <div class="row">
+                <div class="col-md-12 ">
+                    <div class="py-5 px-2 border-k ">
+                        <div class="title d-flex justify-content-center align-items-center text-center ">
+                            <i class="fa-solid fa-bookmark fs-3  me-1 jpj"></i>
+                            <h2>Bookmark your favorite sites</h2>
+                            <i class="fa-solid fa-bookmark fs-3  ms-1 mpm"></i>
+                        </div>
+                        <label for="bookmarkName" class="fw-bold">
+                            <i class="fa-solid fa-book-bookmark pe-2"></i>
+                            Site Name
+                        </label>
+                        <input oninput="productNamevalidation()" class=" form-control input-one w-100 mt-2  rounded-1 p-2" type="text" placeholder="Bookmark Name" id="bookmarkName">
+                        <label for="bookmarkUrl" class="fw-bold mt-4">
+                            <i class="fa-solid fa-link pe-2"></i>
+                            Site URL
+                        </label>
+                        <input oninput="urlvalidation()" class=" form-control input-two  w-100 mt-2  rounded-1 p-2 " type="url" placeholder="Website URL" id="bookmarkUrl">
+                        
+                        <div class="d-flex justify-content-center mt-4">
+                            <button class="btn btn-danger ps-5 pe-5 " onclick="addProdact()" >Submit</button>
+
+                        </div>
+                    </div>
+
+                    <table class="w-100 bg-white text-center mt-5 ">
+                        <thead class="border-bottom">
+                            <tr>
+                                <th class="p-2">index</th>
+                                <th>Website Name</th>
+                                <th>Visit</th>
+                                <th>Delete</th>
+                            </tr>
+                        </thead>
+                        <tbody  class="btn-success p-3" id="tableBody">
+                        
+                        <a href="" target="_blank"></a>
+                        </tbody>
+                       
+                    </table>
+
+                </div>
+            </div>
+        </div>
+
     </div>
-    </div>
 
 
 
+
+
+
+    
 
 
 
@@ -29,4 +81,21 @@
     <script src="./js/bootstrap.bundle.min.js"></script>
     <script src="index.js"></script>
 </body>
+
 </html>
+
+
+
+
+<!-- /*
+        حصه الدرس       
+--------------------------------------------------------------
+oncontextmenu كليك يمين
+onmouseenter مثل الهوفر على الزر
+onmouseleave مثل الهوفر على الزر ولاكن عند الرجوع
+onscroll عند السكرول
+onresize عند التغير في الحجم الشاشه
+---------------
+style.cssText لكتابه اكواد cssكما هي او للعديل
+removeProperty لازالة الخاصية من css
+97 لسا*/  -->

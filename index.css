@@ -1,15 +1,55 @@
-@font-face{font-family:FigtreeVF;src:url(chrome-extension://majdfhpaihoncoakbjgbdhglocklcgno/fonts/FigtreeVF.woff2) format("woff2 supports variations"),url(chrome-extension://majdfhpaihoncoakbjgbdhglocklcgno/fonts/FigtreeVF.woff2) format("woff2-variations");font-weight:100 1000;font-display:swap}
-.perant button:hover{
-    background-color: green;
-    color: aliceblue;
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+::selection {
+    background: #fec260;
+}
+body{
+    background-color: #F7ECDE   ;
+}
+.perant .border-k{
+    margin-top:40px;
+    border-top: 3px dotted black;
+    border-bottom: 3px dotted black;
 
 }
-h1{
-    font-family: Impact;
-    font-size: 80px;
-    font-weight: bolder;
+.perant h1{
+    font-family: "Pacifico", cursive;
+    font-size: 50px;
+    font-weight: 500;
+    width: fit-content;  
+    
 }
-.perant button{
-    background-color: blue;
-    color: aliceblue;
+ .perant h1::before{
+    content: "";
+    position: absolute;
+    height: 15px;
+    left: 0;
+    right: 0;
+    bottom: 10px;
+    background-color: #fec260;
+     transition: height 350ms; 
+     z-index: -1;
 }
+.perant h1:hover::before{
+height: 33px;
+} 
+.perant .title{
+    background-image: linear-gradient(to right, #3ca55c, #f5e103);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.perant .title h2{
+    font-family: "Righteous", cursive;
+    font-weight: 900;
+    font-size: 25px;
+
+}
+.perant input{
+    border: 1px solid rgb(209, 209, 209);
+}
+.perant input:focus{
+    outline: none;
+    box-shadow: 0 0 0 0.25rem #fec26055;
+    border: 1px solid #f5e103;
+    
+}
+
